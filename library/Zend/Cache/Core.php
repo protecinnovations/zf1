@@ -409,6 +409,8 @@ class Zend_Cache_Core
             }
         }
 
+        $this->_backend->load($id, true);
+
         return true;
     }
 
